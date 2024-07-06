@@ -1,0 +1,365 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --white-color: #f4f4f4;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+    --red-color: #dc3545;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.fa-html5 {
+    color: var(--white-color);
+}
+
+.btn-danger {
+    color: var(--yellow-color);
+}
+
+.btn-danger:hover {
+    color: #ffc40077;
+}
+
+.underline {
+    background-color: var(--dark-color);
+    width: 120px;
+    margin: 0 auto 20px;
+    border: 2px solid var(--green-color);
+    display: block;
+}
+
+/* Start navBar */
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-toggler {
+    color: var(--white-color);
+    font-size: 25px;
+    border-color: var(--white-color);
+}
+
+.fa-bars {
+    color: var(--white-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 15px;
+
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+}
+
+.fa-magnifying-glass {
+    color: var(--green-color);
+}
+
+/* Start Landing */
+
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 71px);
+    color: var(--white-color);
+}
+
+.landing .btn-danger {
+    font-size: 20px;
+}
+
+/* End Landing */
+
+/* Start Features */
+
+.fa-bug {
+    color: var(--yellow-color);
+}
+
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+
+.features h3 {
+    color: var(--yellow-color)
+}
+
+/* End Features */
+
+
+/* Start Work */
+
+.our-work {
+    background-color: var(--section-color);
+}
+
+.nav:active {
+    color: black;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    background-color: var(--red-color) !important;
+    color: var(--yellow-color);
+}
+
+.nav-pills .nav-link {
+    color: var(--dark-color);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.our-work .box {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.our-work .box::before {
+    content: attr(data-item);
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: #33d1cca3;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    transform: translateX(calc(-100% - 10px));
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+
+.our-work .btn-danger {
+    font-size: 15px;
+    padding: 13px;
+}
+
+/* End Work */
+
+/* Start Team */
+
+.our-team {
+    background-color: var(--section-color);
+}
+
+.our-team .main-title h2 {
+    color: var(--yellow-color);
+}
+
+.our-team .main-title p {
+    font-weight: bold;
+}
+
+.our-team .team-member {
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.our-team .team-member h3 {
+    background-color: var(--green-color);
+    padding: 10px;
+    color: var(--white-color);
+}
+
+.our-team .team-member p {
+    padding: 10px;
+}
+
+/* End Team */
+
+/* Start Project */
+
+.project {
+    background-color: var(--dark-color);
+}
+
+.project .text h2 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* End Project */
+
+/* Start Blog */
+
+.blog .blog-item {
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.blog .row {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+/* End Blog */
+
+/* Start Sub */
+
+.subscribe {
+    background-color: var(--yellow-color);
+    padding: 30px 20px;
+}
+
+.subscribe .text h4 {
+    margin: 0px;
+    color: var(--dark-color);
+    padding-top: 10px;
+}
+
+.subscribe .input-group {
+    padding-top: 5px;
+}
+
+.subscribe .input-group input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+    margin-right: 15px;
+}
+
+.subscribe .input-group input::placeholder {
+    color: white;
+}
+
+.subscribe .input-group input:focus {
+    box-shadow: none;
+    border: none;
+    border-bottom: 2px solid var(--dark-color);
+    outline: none;
+}
+
+.subscribe .input-group input:focus::placeholder {
+    color: var(--dark-color);
+}
+
+.subscribe .input-group button {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+    border: none;
+    padding: 10px 20px;
+}
+
+/* End Sub */
+
+/* Start Footer */
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 20px 0;
+}
+
+footer .creator {
+    color: var(--green-color);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer .company {
+    color: var(--yellow-color);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer .links li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer .btn-danger {
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+footer .contacts ul svg {
+    height: 30px;
+    width: 35px;
+}
+
+footer .contacts .facebook {
+    color: #3b5998;
+}
+
+footer .contacts .facebook:hover {
+    color: #3b589882;
+}
+
+footer .contacts .twitter {
+    color: #00acee;
+}
+
+footer .contacts .twitter:hover {
+    color: #00abeea0;
+}
+
+footer .contacts .linkedin {
+    color: #0077b5;
+}
+
+footer .contacts .linkedin {
+    color: #0076b546;
+}
+
+footer .contacts .youtube {
+    color: #cd201f;
+}
+
+footer .contacts .youtube:hover {
+    color: #cd1f1fa2;
+}
